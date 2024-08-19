@@ -8,13 +8,13 @@ let package = Package(
   products: [
     .library(
       name: "my_openssl_grpc",
-      targets: ["openssl_grpc"]
+      targets: ["my_openssl_grpc"]
     )
   ],
 
   targets: [
     .target(
-      name: "openssl_grpc",
+      name: "my_openssl_grpc",
       path: ".",
       exclude: [
         ".git/",
@@ -3448,7 +3448,7 @@ let package = Package(
     .testTarget(
       name: "build-test",
       dependencies: [
-        "openssl_grpc",
+        "my_openssl_grpc",
       ],
       path: "SwiftPMTests/build-test"
     ),
