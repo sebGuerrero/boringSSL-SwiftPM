@@ -7,7 +7,7 @@ let package = Package(
   name: "BoringSSL-GRPC",
   products: [
     .library(
-      name: "openssl_grpc",
+      name: "my_openssl_grpc",
       targets: ["openssl_grpc"]
     )
   ],
